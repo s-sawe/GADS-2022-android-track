@@ -1,6 +1,5 @@
 package com.devsawe.laundry_app.composables
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,17 +12,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.devsawe.laundry_app.ui.theme.Purple200
+import androidx.navigation.NavController
+
 
 @Composable
-fun MainContent(){
-    Scaffold(
-        content = { MyContent()}
-    )
-}
-
-@Composable
-fun MyContent(){
+fun HomeScreen(navController: NavController){
     Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
         Card( elevation = 10.dp){ //here border = BorderStroke(2.dp, color = Purple200),
